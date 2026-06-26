@@ -22,8 +22,10 @@
     background-image: url("amazon_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55px;
-    width: 100px;
+    height: 30px;
+    width: 85px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .border {
@@ -167,6 +169,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-left: 10px;
 }
 
 .panel-options p {
@@ -192,23 +195,25 @@ span {
 }
 
 /** hero section **/
-.hero-arrows{
+.hero-arrows {
     position: absolute;
     top: 30%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     background: transparent;
     border: none;
-    padding: 8px 12px;
     cursor: pointer;
     font-size: 50px;
-    padding: 40px 20px;
+    padding: 40px 10px;
 }
-.left-arrow{
-    left: 20px; 
+
+.left-arrow {
+    left: 20px;
 }
-.right-arrow{
-    right: 20px; 
+
+.right-arrow {
+    right: 20px;
 }
+
 .hero-section {
     background-size: cover;
     height: 670px;
@@ -219,6 +224,9 @@ span {
         url("front1.jpg");
     background-position: center;
     padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
 }
 
 .boxes {
@@ -244,6 +252,8 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    padding: 0px 10px;
+    padding-bottom: 5px;
 }
 
 .box {
@@ -281,25 +291,29 @@ span {
     font-weight: 500;
 }
 
-.hero-section a:hover{
-        color: black;
-} 
+.hero-section a:hover {
+    color: black;
+}
+
 .shop-section a {
     color: #2162A1;
     font-size: 1rem;
     font-weight: 500;
 }
-.shop-section a:hover{
-        color: black;
-} 
+
+.shop-section a:hover {
+    color: black;
+}
+
 .major-section a {
     color: #2162A1;
     font-size: 1rem;
     font-weight: 500;
 }
-.major-section a:hover{
-        color: black;
-} 
+
+.major-section a:hover {
+    color: black;
+}
 
 .name {
     font-size: 0.85rem;
@@ -326,34 +340,65 @@ span {
     width: 99%;
 }
 
+.box7-image1 img {
+    height: 152px;
+}
+
+.costume-image1 {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px 0px 15px;
+}
+
+.costume-image1 img {
+    width: 50%;
+    height: 90%;
+    display: block;
+    margin-left: 25%;
+}
+
+.costume-detail p {
+    padding-bottom: 1px;
+}
+
+.choose-image {
+    padding-bottom: 30px;
+}
+
 /** major **/
 
 .button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     background: #fff;
-    border: 1px solid grey;
-    padding: 8px 12px;
+    border: 0.5px solid grey;
     cursor: pointer;
     font-size: 30px;
     padding: 40px 20px;
     border-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.major-section:hover .button {
+    opacity: 1;
 }
 
 .left {
-    left: 20px; 
-    border-top-right-radius: 5px ;
-    border-bottom-right-radius: 5px ;
-    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    left: 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 .right {
-    right: 20px; 
-    border-top-left-radius: 5px ;
-    border-bottom-left-radius: 5px ;
+    right: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-}  
+}
 
 .major-box {
     border: 2px solid whitesmoke;
@@ -363,15 +408,19 @@ span {
     position: relative;
 }
 
+.row3.major-section {
+    padding-bottom: 25px;
+    /* adds space after this div */
+}
+
 .major-section {
     display: flex;
     justify-content: center;
     background-color: #e2e7e6;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
-
-.row1-txt{
+.row1-txt {
     display: flex;
 }
 
@@ -379,9 +428,10 @@ span {
     padding-top: 21px;
 }
 
-.row1-txt a:hover{
-        color: black;
-} 
+.row1-txt a:hover {
+    color: black;
+}
+
 .major-images {
     display: flex;
     gap: 15px;
@@ -389,15 +439,16 @@ span {
     justify-content: space-evenly;
     padding-bottom: 20px;
     white-space: nowrap;
-    overflow-x: hidden;  
+    overflow-x: hidden;
     overflow-y: hidden;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.major-images:hover{
-    white-space: nowrap; 
-    overflow-x: scroll;  
-    overflow-y: hidden;  
+
+.major-images:hover {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .major-box img {
@@ -412,20 +463,66 @@ span {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    margin-left: 20px;
-    padding: 15px;
+    margin-left: 4.5px;
+    padding: 11px;
 }
+
+/* recommendations */
+
+.image-portion {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.recommendations p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 33px;
+    padding: 11px;
+}
+
+.recommend-arrows {
+    color: grey;
+
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0.5px solid grey;
+    border-radius: 6px;
+    top: 30%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.left-arrow .recommend-arrows {
+    margin-left: 10px;
+}
+
+/*
+.hero-arrows{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%); 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 40px 10px;
+}
+*/
+
 
 /** see-more-section **/
 .see-more-section {
-    height: 120px;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 1px;
     padding: 20px 0;
+    border: 1px solid #dddddd;
 }
 
 .see-more-section p {
@@ -476,6 +573,25 @@ span {
     height: 50px;
 }
 
+#topBtn {
+    font-size: 0.85rem;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.foot-panel-1:hover {
+    background-color: #4c5b6b;
+}
+
 .foot-panel-2 {
     background-color: #222f3d;
     color: #dddddd;
@@ -521,7 +637,7 @@ ul p {
     background-image: url("amazon_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80px;
+    height: 55px;
     width: 150px;
 }
 
@@ -605,4 +721,71 @@ ul p {
 
 .copyright {
     padding-top: 10px;
+}
+
+/* price in costumes */
+.price {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #111;
+    padding-top: 5px;
+    font-weight: 100;
+}
+
+.price-name {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #111;
+    padding-top: 5px;
+    font-weight: 100;
+}
+
+.choose-image {
+    display: grid;
+    grid-template-columns: repeat(4, 77px);
+    padding-top: 15px;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.choose-image img {
+    width: 60px;
+    height: 65px;
+    display: block;
+    margin-right: none;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.choose-image img:hover {
+    border: 2px solid #0A7CD1;
+}
+
+.price .main {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.price .decimal {
+    font-size: 14px;
+    vertical-align: super;
+    margin-left: 1px;
+}
+
+.price .pkr {
+    font-size: 14px;
+    vertical-align: super;
+    margin-left: 1px;
+}
+
+.price .old {
+    margin-left: 10px;
+    color: #555;
+    text-decoration: line-through;
+    font-size: 14px;
 }
