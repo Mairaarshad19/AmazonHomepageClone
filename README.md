@@ -19,7 +19,7 @@ This project recreates the look and feel of Amazon's landing page with:
 
 ## Project Preview 
 
-![Amazon Homepage](Assets/Screenshots/frontpage.png)
+![Amazon Homepage](Assets/Screenshots/homepage.png)
 
 ![Amazon Homepage](Assets/Screenshots/section.png)
 
