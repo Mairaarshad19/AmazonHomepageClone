@@ -17,6 +17,12 @@ This project recreates the look and feel of Amazon's landing page with:
 - Assets/ - image and visual assets used by the page
 - Assets/Iconss/ - logo and icon assets
 
+## Project Preview 
+
+![Amazon Homepage](Assets/Screenshots/frontpage.png)
+
+![Amazon Homepage](Assets/Screenshots/section.png)
+
 ## Features
 - Responsive and visually styled homepage layout
 - Custom Amazon-inspired navbar and category panel
