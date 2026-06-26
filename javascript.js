@@ -71,3 +71,30 @@ document.getElementById("topBtn").addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector(".navbar");
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > 65) {
+    header.classList.add("has-sticky-nav");
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down - hide navbar
+      navbar.classList.add("hidden");
+      navbar.classList.remove("sticky");
+    } else {
+      // Scrolling up - show navbar
+      navbar.classList.add("sticky");
+      navbar.classList.remove("hidden");
+    }
+  } else {
+    // Near top of the page - reset to normal flow
+    navbar.classList.remove("sticky", "hidden");
+    header.classList.remove("has-sticky-nav");
+  }
+
+  lastScrollY = currentScrollY;
+});
