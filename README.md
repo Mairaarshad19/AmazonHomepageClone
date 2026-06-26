@@ -14,7 +14,8 @@ This project recreates the look and feel of Amazon's landing page with:
 - index.html - main page structure
 - style.css - styling and layout
 - javascript.js - interactive behavior such as image switching and scrolling
-- Assets/ - supporting assets and icons
+- Assets/ - image and visual assets used by the page
+- Assets/Iconss/ - logo and icon assets
 
 ## Features
 - Responsive and visually styled homepage layout

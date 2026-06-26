@@ -43,7 +43,7 @@ header.has-sticky-nav {
 }
 
 .navbar-logo {
-    background-image: url("amazon_logo.png");
+    background-image: url("Assets/Iconss/amazon_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
@@ -126,7 +126,7 @@ header.has-sticky-nav {
 
 /* Box4 */
 .country-logo {
-    background-image: url("american\ flag.png");
+    background-image: url("Assets/Iconss/american%20flag.png");
     background-size: cover;
     height: 16.2px;
     width: 21.6px;
@@ -658,7 +658,7 @@ ul p {
 }
 
 .logo {
-    background-image: url("amazon_logo.png");
+    background-image: url("Assets/Iconss/amazon_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 30px;

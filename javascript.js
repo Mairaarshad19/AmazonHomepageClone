@@ -13,9 +13,33 @@ function shownext(id) {
 }
 
 let index = 0;
-const bgImages = ["url(front1.jpg)", "url(front2.jpg)", "url(front3.jpg)", "url(front4.jpg)", "url(front5.jpg)"];
+const bgImages = ["url(Assets/front1.jpg)", "url(Assets/front2.jpg)", "url(Assets/front3.jpg)", "url(Assets/front4.jpg)", "url(Assets/front5.jpg)"];
 let box = document.querySelector('.hero-section');
 box.style.backgroundImage = "linear-gradient(to bottom, transparent 50%, #e2e7e6 100%)," + bgImages[index];
+
+function normalizeAssetPaths() {
+  document.querySelectorAll('img').forEach((img) => {
+    const src = img.getAttribute('src');
+    if (src && !src.startsWith('http') && !src.startsWith('data:') && !src.startsWith('Assets/')) {
+      img.setAttribute('src', `Assets/${src}`);
+    }
+  });
+
+  document.querySelectorAll('[style]').forEach((element) => {
+    const style = element.getAttribute('style');
+    if (style && style.includes('background-image')) {
+      const updatedStyle = style.replace(/url\(['"]?([^'")]+)['"]?\)/g, (match, path) => {
+        if (/^(https?:|data:|Assets\/)/.test(path)) {
+          return `url('${path}')`;
+        }
+        return `url('Assets/${path}')`;
+      });
+      element.setAttribute('style', updatedStyle);
+    }
+  });
+}
+
+normalizeAssetPaths();
 
 function previous() {
   if (index === 0) {
