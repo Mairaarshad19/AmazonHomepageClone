@@ -13,7 +13,7 @@ function shownext(id) {
 }
 
 let index = 0;
-const bgImages = ["url(Assets/front1.jpg)", "url(Assets/front2.jpg)", "url(Assets/front3.jpg)", "url(Assets/front4.jpg)", "url(Assets/front5.jpg)"];
+const bgImages = ["url(Assets/Images/front1.jpg)", "url(Assets/Images/front2.jpg)", "url(Assets/Images/front3.jpg)", "url(Assets/Images/front4.jpg)", "url(Assets/Images/front5.jpg)"];
 let box = document.querySelector('.hero-section');
 box.style.backgroundImage = "linear-gradient(to bottom, transparent 50%, #e2e7e6 100%)," + bgImages[index];
 
@@ -63,25 +63,25 @@ function next() {
 
 function showcostume(showimage) {
   document.getElementById("main-costume").src = showimage;
-  if (showimage == 'costume1.jpg') {
+  if (showimage == 'Assets/Images/costume1.jpg') {
     document.querySelector('.price-name').innerHTML = 'Melissa & Doug Doctor Role Play Costume Dress-Up Set (7 pcs) Frustration-Free Packaging';
     document.querySelector('.main').innerHTML = '6807';
     document.querySelector('.decimal').innerHTML = '16';
     document.querySelector('.old').innerHTML = 'List: PKR11,914.66';
   }
-  else if (showimage == 'costume2.jpg') {
+  else if (showimage == 'Assets/Images/costume2.jpg') {
     document.querySelector('.price-name').innerHTML = 'Melissa & Doug Dress-Up Tiaras for Costume Role Play (4 pcs)';
     document.querySelector('.main').innerHTML = '3958';
     document.querySelector('.decimal').innerHTML = '31';
     document.querySelector('.old').innerHTML = '';
   }
-  else if (showimage == 'costume3.jpg') {
+  else if (showimage == 'Assets/Images/costume3.jpg') {
     document.querySelector('.price-name').innerHTML = 'Liberty Imports 10 PCs Fireman Gear Firefighter Costume Role Play Career Dress U…';
     document.querySelector('.main').innerHTML = '6807';
     document.querySelector('.decimal').innerHTML = '16';
     document.querySelector('.old').innerHTML = '';
   }
-  else if (showimage == 'costume4.jpg') {
+  else if (showimage == 'Assets/Images/costume4.jpg') {
     document.querySelector('.price-name').innerHTML = 'PJ Masks Gecko Costume for Toddlers, Official PJ Masks Costume Jumpsuit';
     document.querySelector('.main').innerHTML = '9417';
     document.querySelector('.decimal').innerHTML = '66';
